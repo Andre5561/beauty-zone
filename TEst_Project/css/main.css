@@ -1,0 +1,750 @@
+* {
+  box-sizing: border-box;
+}
+
+.html {
+  --main-color: rgba(43, 127, 255, 1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+
+ background-image: url('../SVG/content-bg.svg');
+     
+  background-size: auto, 1400px 686.93px;
+
+  background-position: 0 0, right top;
+
+  background-repeat: no-repeat, no-repeat;
+
+
+}
+
+
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.295) 75%, rgba(255, 255, 255, 0));
+}
+
+
+
+.logo {
+  flex: 1;
+  padding: 0 99px;
+  /* Отступы от краев экрана */
+}
+
+.nav {
+  flex: 2;
+  text-align: center;
+  padding: 10px 0;
+  transition: color 0.3s;
+
+
+}
+
+
+.nav-item {
+  text-decoration: none !important;
+  color: inherit !important;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+
+
+
+}
+
+
+.nav-item:hover {
+  color: rgba(43, 127, 255, 1) !important;
+  font-weight: 700;
+
+
+}
+
+
+.icons {
+  flex: 1;
+  text-align: right;
+  padding: 0 103px;
+}
+
+/*Контент*/
+
+.main-logo {
+  margin-left: 280px;
+}
+
+.content {
+  position: relative;
+}
+
+/*.content-bg {
+
+  
+  background-image:url('SVG/content-bg.svg') ;
+     
+  background-size: auto, 1400px 686.93px;
+
+  background-position: 0 0, right top;
+
+  background-repeat: no-repeat, no-repeat;
+}
+  */
+
+.content-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-left: 300px;
+}
+
+
+.modal-btn-open {
+  height: 53px;
+  width: 219px;
+  padding: 16px, 32px, 16px, 32px;
+  color: white;
+  background-color: rgba(43, 127, 255, 1);
+  gap: 10px;
+  border-radius: 32px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  border: 2px solid rgba(43, 127, 255, 1);
+  margin-left: 300px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.modal-btn-open:hover {
+  background-color: transparent;
+  border-color: rgba(43, 127, 255, 1);
+  color: rgba(1, 28, 68, 1);
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  border: none;
+  margin-left: 320px;
+  margin-top: 14px;
+}
+
+/* Главная часть */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-top: 0;
+  margin-left: 50px;
+  /*background-image: url('SVG/backgroundR.svg');
+  background-repeat: no-repeat;
+  background-size: cover; /* Изображение покрывает весь элемент */
+
+}
+
+
+
+.main-title {
+  flex: 1;
+  text-align: left;
+  margin: -250px 0 0 0;
+  /* Отрицательное значение сдвинет элемент вверх */
+  padding: 0 80px;
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: rgba(1, 28, 68, 1);
+}
+
+.main-img {
+  flex: 2;
+  max-width: 100%;
+  height: auto;
+  margin-top: 100px;
+  height: 700px;
+
+
+}
+
+.sub-title {
+  color: rgba(43, 127, 255, 1);
+}
+
+
+.sub-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  margin: 40px 0 0 0;
+
+
+
+}
+
+.b-zone {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+/*Вторая часть*/
+
+
+.under-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../SVG/background-vector.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 1000px;
+  position: relative;
+}
+
+.under-title {
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: rgba(1, 28, 68, 1);
+  position: absolute;
+  top: 180px;
+  text-align: center !important;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+
+
+}
+
+.sub-under-title {
+  color: rgba(43, 127, 255, 1);
+  text-align: center;
+
+}
+
+
+/*Сards*/
+.cards-view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-right: 50px;
+
+}
+
+.first-card {
+  background-color: white;
+  border-radius: 32px;
+  height: 181px;
+  width: 318px;
+  box-shadow: 0 4px 8px rgba(168, 198, 245, 0.38);
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  margin: 0 50px;
+  transform: 0.3s;
+
+
+}
+
+.first-card:hover {
+  transform: scale(1.05);
+}
+
+
+.first-card-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+}
+
+/*Slider*/
+
+.slider-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+
+
+.slider-title {
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: rgba(1, 28, 68, 1);
+  position: absolute;
+  bottom: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center !important;
+  margin: 0;
+
+
+}
+
+.sub-slider-title {
+  color: rgba(43, 127, 255, 1);
+  text-align: center;
+}
+
+/*sLIDER*/
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slides {
+  display: flex;
+  gap: 16px;
+
+}
+
+.slide-container {
+  position: relative;
+  bottom: 180px;
+}
+
+.slide-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.slide-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(180.05deg, rgba(1, 28, 68, 0) 48.53%, rgba(1, 28, 68, 0.725825) 84.61%, #011C44 101.39%);
+  pointer-events: none;
+}
+
+.slides .slide-container:first-child::before {
+  content: "Маски \A  для обличчя";
+  white-space: pre-line;
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 5px;
+  z-index: 2;
+}
+
+.find {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.find-title {
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: rgba(1, 28, 68, 1);
+  bottom: 250px;
+  text-align: center !important;
+  margin: 0;
+}
+
+
+.sub-find-title {
+  color: rgba(43, 127, 255, 1);
+  text-align: center;
+}
+
+/*як нас знайти?*/
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 48px;
+  gap: 32px;
+}
+
+
+
+.contact-container {
+  width: 422px;
+  height: 482px;
+  background-color: rgba(1, 31, 74, 1);
+  border: 4px solid rgba(1, 31, 74, 1);
+  border-radius: 32px;
+}
+
+
+.register-top-text {
+  margin-top: 48px;
+  padding-bottom: 16px;
+}
+
+
+.contact-text {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+  margin: 0 auto;
+  padding-bottom: 32px;
+
+}
+
+.sub-content-text {
+  color: rgba(43, 127, 255, 1);
+  text-align: center;
+
+}
+
+.register {
+  border-radius: 32px;
+  height: 52px;
+  width: 310px;
+  border: 2px solid rgba(116, 114, 114, 1);
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  background-color: transparent;
+  margin-bottom: 16px;
+  margin-left: 57px;
+  outline: none;
+}
+
+.register:first-child {
+  margin-top: 32px;
+}
+
+.register::placeholder {
+  color: rgba(255, 255, 255, 1);
+  padding: 18px 32px;
+}
+
+.register:hover {
+
+  border: 2px solid rgba(116, 114, 114, 1);
+  border-color: rgba(116, 114, 114, 1);
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(116, 114, 114, 1);
+
+}
+
+
+.kery-btn {
+  height: 53px;
+  width: 281px;
+  padding: 16px, 32px, 16px, 32px;
+  color: white;
+  background-color: rgba(43, 127, 255, 1);
+  gap: 10px;
+  border-radius: 32px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  border: 2px solid rgba(43, 127, 255, 1);
+  cursor: pointer;
+  margin: 0 auto;
+  margin-left: 70px;
+}
+
+.kery-btn:hover {
+  background-color: transparent;
+  border-color: rgba(43, 127, 255, 1);
+  color: white;
+}
+
+.register-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: rgba(116, 114, 114, 1);
+  margin-top: 8pх;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.contact-map {
+  border-radius: 32px;
+  border: 0;
+}
+
+
+/*подвал*/
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 278px;
+  background-color: rgba(1, 28, 68, 1);
+  background-image:
+      url('../footer/footer-img.png');
+
+  background-size:
+      278px 180px,
+      cover;
+  background-position:
+      right bottom,
+      center;
+  background-repeat:
+      no-repeat,
+      no-repeat;
+  margin-top: 96px;
+
+}
+
+
+.footer-logo {
+  flex: 1;
+  padding: 70px 99px 186px 186px;
+}
+
+.footer-menu {
+  flex: 2;
+  margin: 0;
+  padding: 0;
+  color: white;
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  padding-bottom: 20px;
+
+
+
+}
+
+.footer-nav {
+  padding: 0 0 16px 0;
+  text-align: left;
+
+
+}
+
+.footer-item {
+  color: white;
+  text-decoration: none;
+}
+
+
+.contact-us {
+  flex: 3;
+  margin: 0;
+  padding: 0;
+  color: white;
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.contact-nav {
+  padding: 0 0 16px 0;
+  text-align: left;
+}
+
+.contact-icons-container {
+  display: flex;
+  padding: 0;
+}
+
+.contact-icons {
+  padding: 0 24px 0 0;
+}
+
+
+.author {
+  flex: 4;
+  margin: 0;
+  padding: 0;
+  color: white;
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+
+.conf {
+  padding-top: 16px;
+  color: rgba(116, 114, 114, 1);
+  font-size: 13px;
+  padding-bottom: 110px;
+
+
+}
+
+
+/*Modal*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  max-width: 100%;
+  width: 720px;
+  max-height: 100%;
+  height: 680px;
+  background-color: rgba(1, 28, 68, 1);
+  border-radius: 48px;
+  padding: 42px 144px;
+  overflow-y: auto;
+
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+
+/*Form*/
+.form-input {
+  padding: 18px 32px;
+  width: 310px;
+  border-radius: 32px;
+  border: 2px solid rgba(116, 114, 114, 1);
+  background-color: transparent;
+  margin-bottom: 24px;
+  margin-left: 70px;
+  color: white;
+  
+}
+
+.form-input:hover {
+  background-color: rgba(116, 114, 114, 1);
+  outline: none;
+  color: white;
+}
+
+.form-input::placeholder {
+  color: white;
+}
+
+.from-label {
+  display: block;
+}
+
+.form-button {
+  height: 53px;
+  width: 281px;
+  padding: 16px, 32px, 16px, 32px;
+  color: white;
+  background-color: rgba(43, 127, 255, 1);
+  gap: 10px;
+  border-radius: 32px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  border: 2px solid rgba(43, 127, 255, 1);
+  margin-top: 40px;
+  cursor: pointer;
+  margin-top: 0;
+  margin-left: 85px;
+}
+
+.form-button:hover {
+
+  background-color: transparent;
+  border-color: rgba(43, 127, 255, 1);
+  color: rgb(255, 255, 255);
+}
+
+.form-terms {
+  color: rgba(116, 114, 114, 1);
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin: 0 auto;
+  padding: 8px 34px;
+
+}
+
+
+.form-terms-link {
+  color: rgba(116, 114, 114, 1);
+}
+
+
+.form-main-text {
+  text-align: center;
+  line-height: 70px;
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: white;
+  margin: 0;
+  padding-bottom: 40px;
+  margin-left: 50px;
+}
+
+
+.form-uderline-text {
+  text-align: center;
+  margin-left: 80px;
+  margin-bottom: 32px;
+  width: 274px;
+  height: 52px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 25px;
+ color: white;
+}
+
+
+.free-text {
+  color: rgba(43, 127, 255, 1);
+
+}
